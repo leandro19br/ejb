@@ -1,0 +1,11 @@
+1548429710079	Move folder
+1548429720173	Delete element
+1548429735657	Move 'MANIFEST.MF' to 'META-INF'
+1548429750524	Move 'primefaces-4.0.jar' to 'lib'
+1548429760113	Move 'beans.xml' to 'WEB-INF'
+1548429768036	Move 'faces-config.xml' to 'WEB-INF'
+1548429773799	Move 'web.xml' to 'WEB-INF'
+1548429792273	Move 4 resources to 'WebContent'
+1548429800744	Delete element
+1548531967804	Rename package 'br.com.caelum.livraria.interseptador'
+1548531988339	Rename type 'LogInterseptador'

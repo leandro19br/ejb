@@ -1,0 +1,34 @@
+package br.com.caelum.livraria.dao;
+
+import java.util.List;
+
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import br.com.caelum.livraria.modelo.Autor;
+
+
+/*A CLASSE SER� GEENCIADA PELO ejb, CRIANDO UM JNDI PARA ELA NO SERVIDOR 
+EXSITEM 3 TIPOS DE ANOTAÇÕAES EJB - @STATELESS - UTILIZA POLL DE CONEXÇÃO - @SINGLETON - 1 ESTANCIADO BEAN E @STATFULL - EXCLUSIVO DO CLIENTE*/
+@Stateless
+public class AutorDao {
+	
+
+	@PersistenceContext//anotação específica para EJB gereniar conexão com BD
+	private EntityManager em;//pussui metodos para trabalhar com objetos
+
+	public void salva(Autor autor) {
+		em.persist(autor);
+	}
+	
+	public List<Autor> todosAutores() {
+		return em.createQuery("select a from autor a ", Autor.class).getResultList();
+	}
+
+	public Autor buscaPelaId(Integer autorId) {
+		Autor autor = this.em.find(Autor.class, autorId );
+		return autor;
+	}
+	
+}

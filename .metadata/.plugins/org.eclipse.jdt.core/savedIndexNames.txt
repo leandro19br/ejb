@@ -1,0 +1,9 @@
+INDEX VERSION 1.130+C:\workspace_livraria\.metadata\.plugins\org.eclipse.jdt.core
+4137273428.index
+594216584.index
+3353409058.index
+2536220938.index
+882363568.index
+671656832.index
+1167386450.index
+4010404357.index
